@@ -5,7 +5,7 @@
 
 .row-content {
     margin: 0px auto;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px;
     border-bottom: 1px ridge;
     min-height: 400px;
 /* The min-height property defines the minimu height of an element.
@@ -20,8 +20,8 @@
 }
 
 .jumbotron {
-    padding:70px 30px 70px 30px;
-    margin:0px auto;
+    padding:70px 30px;
+    margin: 0px auto;
     background: #9575CD ;
     color: floralwhite;
 }
