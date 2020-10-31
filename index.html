@@ -71,6 +71,19 @@
               </div>
             </div>
             <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="smokerSectioning">Section</label>
+              <div class="btn-group btn-group-toggle" data-toggle="buttons" id="smokerSectioning">
+                <label for="" class="btn active btn-success">
+                  <input type="radio" name="options" id="smoke1" autocomplete="off" checked>
+                  Non-Smoking
+                </label>
+                <label for="" class="btn btn-danger">
+                  <input type="radio" name="options" id="smoke2" autocomplete="off">
+                  Smoking
+                </label>
+              </div>
+            </div>
+            <div class="form-group row">
               <label for="dateTime" class="col-md-3 col-form-label align-self-start">Date and Time</label>
               <div class="col-md-9" id="dateTime">
                 <div class="row">
@@ -81,7 +94,8 @@
               </div>
             </div>
             <div class="form-group row">
-              <input type="button" value="Cancel" class="col-12 col-md-2 form-control bg-secondary offset-md-3 text-white" data-dismiss="modal">
+              <input type="button" value="Cancel"
+                class="col-12 col-md-2 form-control bg-secondary offset-md-3 text-white" data-dismiss="modal">
               <input type="submit" value="Reserve" class="col-12 col-md-2 form-control bg-info text-white">
             </div>
           </form>
@@ -146,7 +160,9 @@
             data-html="true" title="Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom">Reserve
             Table</a>
         </div>
+        <div class="align-self-center col-12 col-sm-3"></div>
       </div>
+    </div>
     </div>
   </header>
 
