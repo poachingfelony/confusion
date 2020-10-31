@@ -48,6 +48,48 @@
     </div>
   </nav>
 
+  <div class="modal fade" id="reservationForm" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3>Reserve a Table</h3>
+          </div>
+          <button class="close" type="button" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="form-group row">
+              <label for="seatCount" class="col-md-3 col-form-label">Number of Guests</label>
+              <div class="col-md-9" id="seatCount">
+                <input type="radio" name="seatCount" id="seatCount_1" autocomplete="off"> 1
+                <input type="radio" name="seatCount" id="seatCount_2" autocomplete="off" class="ml-2"> 2
+                <input type="radio" name="seatCount" id="seatCount_3" autocomplete="off" class="ml-2"> 3
+                <input type="radio" name="seatCount" id="seatCount_4" autocomplete="off" class="ml-2"> 4
+                <input type="radio" name="seatCount" id="seatCount_5" autocomplete="off" class="ml-2"> 5
+                <input type="radio" name="seatCount" id="seatCount_6" autocomplete="off" class="ml-2"> 6
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="dateTime" class="col-md-3 col-form-label align-self-start">Date and Time</label>
+              <div class="col-md-9" id="dateTime">
+                <div class="row">
+                  <input type="text" name="date" id="date" class="form-control col-12 col-sm-4 mr-sm-4"
+                    placeholder="Date">
+                  <input type="text" name="time" id="time" class="form-control col-12 col-sm-4" placeholder="Time">
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <input type="button" value="Cancel" class="col-12 col-md-2 form-control bg-secondary offset-md-3 text-white" data-dismiss="modal">
+              <input type="submit" value="Reserve" class="col-12 col-md-2 form-control bg-info text-white">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="loginModal" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
       <div class="modal-content">
@@ -228,44 +270,6 @@
         </div>
       </div>
     </div>
-
-    <div class="row row-content align-items-center" id="reserveTable">
-      <div class="col-12 col-sm-8 mx-xl-auto">
-        <div class="card">
-          <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-          <div class="card-body">
-            <form action="#">
-              <div class="form-group row">
-                <label for="seatCount" class="col-md-3 col-form-label">Number of Guests</label>
-                <div class="col-md-9" id="seatCount">
-                  <input type="radio" name="seatCount" id="seatCount_1" autocomplete="off"> 1
-                  <input type="radio" name="seatCount" id="seatCount_2" autocomplete="off" class="ml-2"> 2
-                  <input type="radio" name="seatCount" id="seatCount_3" autocomplete="off" class="ml-2"> 3
-                  <input type="radio" name="seatCount" id="seatCount_4" autocomplete="off" class="ml-2"> 4
-                  <input type="radio" name="seatCount" id="seatCount_5" autocomplete="off" class="ml-2"> 5
-                  <input type="radio" name="seatCount" id="seatCount_6" autocomplete="off" class="ml-2"> 6
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="dateTime" class="col-md-3 col-form-label align-self-start">Date and Time</label>
-                <div class="col-md-9" id="dateTime">
-                  <div class="row">
-                    <input type="text" name="date" id="date" class="form-control col-12 col-sm-4 mr-sm-4"
-                      placeholder="Date">
-                    <input type="text" name="time" id="time" class="form-control col-12 col-sm-4" placeholder="Time">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <input type="submit" value="Reserve"
-                  class="col-12  col-md-2 form-control bg-info offset-md-3 text-white">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 
   <footer class="footer">
